@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "web-part-search-api-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webPartSearchApi/WebPartSearchApiWebPart.js",
+          "manifest": "./src/webparts/webPartSearchApi/WebPartSearchApiWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WebPartSearchApiWebPartStrings": "lib/webparts/webPartSearchApi/loc/{locale}.js"
+  }
+}
