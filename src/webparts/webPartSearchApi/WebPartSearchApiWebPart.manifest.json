@@ -19,7 +19,7 @@
     "group": { "default": "Other" },
     "title": { "default": "WebPartSearchApi" },
     "description": { "default": "WebPartSearchApi description" },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "Search",
     "properties": {
       "description": "WebPartSearchApi"
     }
