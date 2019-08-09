@@ -12,7 +12,7 @@ import WebPartSearchApi from './components/WebPartSearchApi';
 import { IWebPartSearchApiProps } from './components/IWebPartSearchApiProps';
 
 export interface IWebPartSearchApiWebPartProps {
-  nameList: string;
+    idTermSet: string;
 }
 
 export default class WebPartSearchApiWebPart extends BaseClientSideWebPart<IWebPartSearchApiWebPartProps> {
@@ -21,7 +21,7 @@ export default class WebPartSearchApiWebPart extends BaseClientSideWebPart<IWebP
     const element: React.ReactElement<IWebPartSearchApiProps > = React.createElement(
       WebPartSearchApi,
       {
-          nameList: this.properties.nameList,
+          idTermSet: this.properties.idTermSet || 'c1a40892-eea2-4fd1-b75e-179737829e20',
           context: this.context
       }
     );
@@ -49,7 +49,7 @@ export default class WebPartSearchApiWebPart extends BaseClientSideWebPart<IWebP
               groupName: strings.BasicGroupName,
               groupFields: [
                 PropertyPaneTextField('nameList', {
-                  label: strings.NameListFieldLabel
+                  label: strings.IdTermSetFieldLabel
                 })
               ]
             }

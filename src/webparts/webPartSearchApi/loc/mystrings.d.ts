@@ -1,7 +1,8 @@
 declare interface IWebPartSearchApiWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
-  NameListFieldLabel: string;
+  IdTermSetFieldLabel: string;
+  WelcomeTitle: string;
 }
 
 declare module 'WebPartSearchApiWebPartStrings' {

@@ -2,6 +2,7 @@ define([], function() {
   return {
     "PropertyPaneDescription": "Settings WebPart",
     "BasicGroupName": "",
-    "DescriptionFieldLabel": "Input List Name"
+    "IdTermSetFieldLabel": "Input Id Term Set",
+	  "WelcomeTitle": "Welcome to task7 in SharePoint!"
   }
 });

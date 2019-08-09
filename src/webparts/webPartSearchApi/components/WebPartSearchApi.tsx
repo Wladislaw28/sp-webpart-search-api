@@ -1,39 +1,97 @@
 import * as React from 'react';
-import styles from './WebPartSearchApi.module.scss';
+import { DetailsList, DetailsListLayoutMode, IColumn } from 'office-ui-fabric-react/lib/DetailsList';
 import { IWebPartSearchApiProps } from './IWebPartSearchApiProps';
-import { escape } from '@microsoft/sp-lodash-subset';
+import * as strings from 'WebPartSearchApiWebPartStrings';
 
-export default class WebPartSearchApi extends React.Component<IWebPartSearchApiProps, {}> {
+import styles from './WebPartSearchApi.module.scss';
+
+export interface ArrayItems {
+    Title: string;
+    Color: string;
+}
+
+export interface WebPartSearchApiState {
+    arrayItems: ArrayItems[];
+    columns: IColumn[];
+}
+
+export default class WebPartSearchApi extends React.Component<IWebPartSearchApiProps, WebPartSearchApiState> {
+
+    public state = {
+        arrayItems: [],
+        columns: []
+    };
 
     public componentDidMount(): void {
-        this._getList();
+        this._getSeactData();
     }
 
     public componentWillReceiveProps(): void {
-        this._getList();
+        this._getSeactData();
     }
 
+    private _getSeactData() : void {
+        fetch(`https://mihasev28wmreply.sharepoint.com/search/_api/search/query?querytext='${this.props.idTermSet}'&selectproperties='Title%2cRefinableString50%2ctitleColor'&clienttype='ContentSearchRegular'`, {
+            method: 'get',
+            headers: {
+                'accept': "application/json;odata=nometadata",
+                'content-type': "application/json;odata=nometadata",
+            }
+        }).then((response) => response.json()).then((respo) =>
+        {
+            return this._mapArrayItems(respo.PrimaryQueryResult.RelevantResults.Table.Rows);
+        });
+    }
 
-    // @ts-ignore
-    private async _getList(): void {
-        if (this.props.nameList !== '') {
-            const Web1 = (await import(/*webpackChunkName: '@pnp_sp' */ "@pnp/sp")).Web;
-            const web = new Web1(this.props.context.pageContext.web.absoluteUrl+'/sites/Dev1');
-            web.lists.getByTitle(this.props.nameList).items.get().then((response) => {
-                console.log(response);
+    private _mapArrayItems(arrayData: Array<any>): void {
+        const dataMap: ArrayItems[] = [];
+        arrayData.forEach((item) => {
+            dataMap.push({
+                Title: item.Cells[2].Value,
+                Color: item.Cells[3].Value
             });
-        }
+            this.setState({
+                arrayItems: dataMap,
+                columns: this._columsCreate(['Title','Color'])
+            });
+        });
+    }
 
+    private _columsCreate(arraySelect: Array<any>): Array<IColumn> {
+        const columns: IColumn[] = [];
+        arraySelect.forEach((item,index) => {
+            columns.push({
+                key: `column${index}`,
+                name: item,
+                fieldName: item,
+                minWidth: 70,
+                maxWidth: 90,
+                isResizable: true,
+            });
+        });
+        return columns;
     }
 
   public render(): React.ReactElement<IWebPartSearchApiProps> {
+        const {arrayItems, columns} = this.state;
     return (
       <div className={ styles.webPartSearchApi }>
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to SharePoint!</span>
-              <p className={ styles.description }>{escape(this.props.nameList)}</p>
+              <span className={ styles.title }>{strings.WelcomeTitle}</span>
+                <div>
+                    {arrayItems.length > 1 ?
+                        <DetailsList items={arrayItems}
+                                     columns={columns}
+                                     setKey="set"
+                                     layoutMode={DetailsListLayoutMode.justified}
+                                     isHeaderVisible={true}
+                                     selectionPreservedOnEmptyClick={true}
+                                     enterModalSelectionOnTouch={true}
+                                     ariaLabelForSelectionColumn="Toggle selection"
+                                     ariaLabelForSelectAllCheckbox="Toggle selection for all items" /> : null}
+                </div>
             </div>
           </div>
         </div>
