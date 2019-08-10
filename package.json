@@ -20,6 +20,8 @@
     "@pnp/logging": "^1.3.4",
     "@pnp/odata": "^1.3.4",
     "@pnp/sp": "^1.3.4",
+    "@pnp/sp-clientsvc": "^1.3.4",
+    "@pnp/sp-taxonomy": "^1.3.4",
     "@types/es6-promise": "0.0.33",
     "@types/react": "16.7.22",
     "@types/react-dom": "16.8.0",

@@ -2,16 +2,16 @@
 
 .webPartSearchApi {
   .container {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0px auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    max-height: 1000px;
   }
 
   .row {
     @include ms-Grid-row;
     @include ms-fontColor-white;
     background-color: $ms-color-themeDark;
-    padding: 20px;
     padding: 20px;
     background-image: url(https://images.pexels.com/photos/1279813/pexels-photo-1279813.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-repeat: no-repeat;
@@ -74,5 +74,27 @@
       vertical-align: top;
       display: inline-block;
     }
+  }
+
+  .button_filter{
+    background-color: #fff200;
+    box-shadow: 1px 1px 10px #777;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+  .nav_filter {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .nav_filter_li{
+    float:left;
+    margin-right:5px;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 13px;
   }
 }

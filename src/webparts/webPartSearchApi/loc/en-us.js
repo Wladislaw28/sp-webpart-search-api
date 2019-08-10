@@ -3,6 +3,8 @@ define([], function() {
     "PropertyPaneDescription": "Settings WebPart",
     "BasicGroupName": "",
     "IdTermSetFieldLabel": "Input Id Term Set",
-	  "WelcomeTitle": "Welcome to task7 in SharePoint!"
+	  "WelcomeTitle": "Welcome to task7 in SharePoint!",
+	  "TitleColums": "Title",
+	  "ColorColums": "Color"
   }
 });
