@@ -64,7 +64,7 @@ export default class WebPartSearchApi extends React.Component<IWebPartSearchApiP
             });
             this.setState({
                 arrayItems: dataMap,
-                columns: this._columsCreate([strings.TitleColums,strings.ColorColums])
+                columns: this._columsCreate(['Title','Color'])
             });
         });
     }

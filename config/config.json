@@ -14,5 +14,6 @@
   "externals": {},
   "localizedResources": {
     "WebPartSearchApiWebPartStrings": "lib/webparts/webPartSearchApi/loc/{locale}.js"
+
   }
 }

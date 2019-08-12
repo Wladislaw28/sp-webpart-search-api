@@ -6,7 +6,7 @@ import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
-
+import { taxonomy } from '@pnp/sp-taxonomy';
 import * as strings from 'WebPartSearchApiWebPartStrings';
 import WebPartSearchApi from './components/WebPartSearchApi';
 import { IWebPartSearchApiProps } from './components/IWebPartSearchApiProps';
@@ -17,7 +17,11 @@ export interface IWebPartSearchApiWebPartProps {
 
 export default class WebPartSearchApiWebPart extends BaseClientSideWebPart<IWebPartSearchApiWebPartProps> {
 
-  public render(): void {
+
+    public render(): void {
+        taxonomy.setup({
+            spfxContext: this.context
+        });
     const element: React.ReactElement<IWebPartSearchApiProps > = React.createElement(
       WebPartSearchApi,
       {

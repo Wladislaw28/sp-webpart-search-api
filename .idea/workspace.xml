@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c3d0122-5285-40d4-8fa8-20125251bafe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/ru-ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/package-solution.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/package-solution.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/en-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/en-us.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/mystrings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/mystrings.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/ru-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/ru-ru.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +23,7 @@
     <session id="1939705994">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -33,21 +32,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="5" />
-          <entry key="json" value="4" />
+          <entry key="js" value="7" />
+          <entry key="json" value="11" />
           <entry key="scss" value="2" />
-          <entry key="ts" value="9" />
-          <entry key="tsx" value="2" />
+          <entry key="ts" value="11" />
+          <entry key="tsx" value="3" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JSON" value="11" />
+          <entry key="JavaScript" value="7" />
           <entry key="SCSS" value="2" />
-          <entry key="TypeScript" value="9" />
-          <entry key="TypeScript JSX" value="2" />
+          <entry key="TypeScript" value="11" />
+          <entry key="TypeScript JSX" value="3" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -60,20 +59,20 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="129" />
-          <entry key="json" value="7" />
+          <entry key="json" value="10" />
           <entry key="scss" value="120" />
-          <entry key="ts" value="100" />
-          <entry key="tsx" value="1362" />
+          <entry key="ts" value="102" />
+          <entry key="tsx" value="1441" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="7" />
+          <entry key="JSON" value="10" />
           <entry key="JavaScript" value="129" />
           <entry key="SCSS" value="120" />
-          <entry key="TypeScript" value="100" />
-          <entry key="TypeScript JSX" value="1362" />
+          <entry key="TypeScript" value="102" />
+          <entry key="TypeScript JSX" value="1441" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -84,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="46">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -93,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="148" column="6" lean-forward="true" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="135" column="49" lean-forward="true" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -116,14 +115,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="D:/mihasev_LabSite.xml" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/IWebPartSearchApiProps.ts" />
-        <option value="$PROJECT_DIR$/config/package-solution.json" />
         <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.manifest.json" />
         <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.module.scss" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/mystrings.d.ts" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/en-us.js" />
         <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/ru-ru.js" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/en-us.js" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/mystrings.d.ts" />
+        <option value="$PROJECT_DIR$/config/config.json" />
+        <option value="$PROJECT_DIR$/config/package-solution.json" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/IWebPartSearchApiProps.ts" />
         <option value="$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.tsx" />
       </list>
     </option>
@@ -243,18 +243,18 @@
       <updated>1565188858175</updated>
       <workItem from="1565188860434" duration="11173000" />
       <workItem from="1565353546681" duration="582000" />
-      <workItem from="1565354167655" duration="19026000" />
+      <workItem from="1565354167655" duration="23028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30781000" />
+    <option name="totallyTimeSpent" value="34783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -268,7 +268,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -281,6 +281,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/SearchList.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/LabDemo.xml">
@@ -304,27 +315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/components/IWebPartSearchApiProps.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/office-ui-fabric-react/src/components/DetailsList/DetailsList.types.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-331">
           <caret line="298" column="17" selection-start-line="298" selection-start-column="17" selection-end-line="298" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SearchList.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -337,24 +331,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/package-solution.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -367,29 +347,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/ru-ru.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="115">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/en-us.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/loc/mystrings.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/serve.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/SearchList.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/package-solution.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/components/IWebPartSearchApiProps.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/WebPartSearchApiWebPart.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartSearchApi/components/WebPartSearchApi.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="148" column="6" lean-forward="true" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="135" column="49" lean-forward="true" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
